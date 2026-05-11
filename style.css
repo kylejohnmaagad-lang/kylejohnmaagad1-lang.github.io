@@ -1084,71 +1084,145 @@ body {
 }
 
 /* ============================================================
-   RESPONSIVE
+   RESPONSIVE DESIGN
    ============================================================ */
-@media (max-width: 900px) {
+
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    padding: 12px 5%;
+    height: auto;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .navbar nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .navbar nav a {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  /* Hero Section */
   .main {
     flex-direction: column;
     text-align: center;
-    gap: 48px;
+    gap: 40px;
     padding: 60px 6%;
   }
 
-  .title-row {
-    justify-content: center;
+  .right {
+    align-items: center;
+    max-width: 100%;
   }
-
-  .line { display: none; }
-
-  .explore-btn { margin: 24px auto 0; }
-
-  .edu-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .edu-logos-grid {
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    padding: 0 5%;
-    gap: 12px;
-  }
-
-  .logo { display: none; }
-
-  .navbar nav { gap: 18px; }
-
-  .title-row h1,
-  .portfolio { font-size: 40px; }
 
   .profile-circle {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
   }
 
-  .contact-title { font-size: 40px; }
-  .contact-subtitle { font-size: 16px; }
+  .name-hero {
+    font-size: 42px;
+    line-height: 1.1;
+  }
 
-  .contact-left input,
-  .contact-right input,
-  .contact-left textarea {
+  .greeting {
+    font-size: 18px;
+  }
+
+  .tagline {
+    font-size: 14px;
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
     width: 100%;
   }
 
-  .contact-container { gap: 28px; }
-
-  .contact-info {
-    flex-direction: column;
-    align-items: center;
-    gap: 22px;
+  .explore-btn,
+  .btn-outline {
+    width: 100%;
+    max-width: 260px;
+    justify-content: center;
   }
 
+  .hero-stats {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+
+  /* About */
+  .about-content {
+    padding: 60px 20px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  /* Skills */
+  .skills-circles {
+    gap: 20px;
+  }
+
+  .circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Habits */
+  .habit-card img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  /* Education */
+  .edu-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .edu-entry {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  /* Lists */
+  .split-lists {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Projects */
   .project-item {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
   }
 
   .project-previews {
@@ -1156,6 +1230,87 @@ body {
     justify-content: center;
   }
 
-  .section-title { font-size: 32px; }
+  .project-previews img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  /* Contact */
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+
+  .contact-left input,
+  .contact-right input,
+  .contact-left textarea {
+    width: 100%;
+  }
+
+  .send-btn {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 50px 20px 40px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .socials {
+    flex-wrap: wrap;
+  }
 }
 
+
+/* ---------- SMALL PHONES ---------- */
+@media (max-width: 480px) {
+
+  .profile-circle {
+    width: 170px;
+    height: 170px;
+  }
+
+  .name-hero {
+    font-size: 34px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .page-banner-title {
+    font-size: 42px;
+  }
+
+  .circle {
+    width: 140px;
+    height: 140px;
+    padding: 18px;
+  }
+
+  .project-item {
+    padding: 20px;
+  }
+
+  .project-info p {
+    font-size: 13px;
+  }
+
+  .contact-title {
+    font-size: 34px;
+  }
+}
